@@ -1,12 +1,10 @@
-import { Titulo as TituloEstilo } from './styles';
+import { P } from './styles';
 
 export type Props = {
     children: String
-    fontSize?: String
+    tipo?: 'principal' | 'secundario'
 }
 
 
-const Titulo = (props: Props) => (
-    <TituloEstilo fontSize={props.fontSize}>{props.children}</TituloEstilo>
-)
-export default Titulo
+const paragrafo = ({ children, tipo = 'principal'}: Props) => ( <P tipo={tipo}>{children}</P> )
+export default paragrafo

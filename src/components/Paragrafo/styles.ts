@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 import { Props } from '.';
 
-export const Titulo = styled.h3<Props>`
-    color: #282A35;
-    font-size: ${(props) => (props.fontSize ? props.fontSize + 'px' : '14px')};
-    fonnt-weight: bold;
+export const P = styled.h3<Props>`
+    font-size: 14px;
+    line-height: 22px;
+    color: ${(props) => (props.tipo === 'principal' ? '#282a35' : '#949494')};
 `
